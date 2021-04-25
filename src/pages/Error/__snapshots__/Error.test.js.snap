@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error page tests renders correctly 1`] = `
+<div>
+  <div
+    class="errorpPage-wrap"
+  >
+    <div
+      class="errorpPage-box"
+    >
+      <div
+        class="errorpPage-img"
+      >
+        <img
+          alt="error"
+          src="404.jpg"
+        />
+      </div>
+      <div
+        class="errorpPage-tip"
+      >
+        <h3>
+          Whoops... Looks like nothing is here!
+        </h3>
+        test error message
+      </div>
+      <div
+        class="errorpPage-operate"
+      >
+        <a
+          href="/"
+        >
+          <span
+            class="glyphicon glyphicon-home"
+          />
+          Back to home page
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

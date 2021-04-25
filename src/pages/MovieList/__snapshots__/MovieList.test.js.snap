@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Movie List page tests renders correctly 1`] = `
+<div>
+  <div
+    class="movie-list-wrapper"
+  >
+    <div
+      class="movie-list-content"
+    >
+      <div
+        class="movie-list-popular"
+      >
+        <div
+          class="movie-list-box-container"
+        >
+          <p
+            class="movie-list-box-title"
+          >
+            Now Showing
+          </p>
+          <div
+            class="snippet-list-wrapper"
+          />
+        </div>
+      </div>
+      <div
+        class="movie-list-now"
+      >
+        <div
+          class="movie-list-box-container"
+        >
+          <p
+            class="movie-list-box-title"
+          >
+            Popular Movie
+          </p>
+          <div
+            class="snippet-list-wrapper"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

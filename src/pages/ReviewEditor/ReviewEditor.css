@@ -1,0 +1,97 @@
+.review-editor-wrapper {
+    width: 1000px;
+    margin:  100px auto;
+    position: relative;
+}
+.review-editor-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -50px;
+}
+.review-editor-rating-label {
+    padding-right: 10px;
+}
+.review-editor-form {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review-editor-form input {
+    width: 600px;
+}
+
+.editor-input-title {
+    font-size: 28px;
+    font-weight: 600;
+    border: 0;
+    overflow: hidden;
+    height: 30px;
+}
+.review-editor-body {
+    margin-top: 40px;
+    border-top: 1px #ddd solid;
+    padding-top: 20px;
+}
+.editor-input-body {
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    overflow: hidden;
+    height: 30px;
+    width: 600px;
+    min-height: 200px;
+    max-height: 600px;
+    border-style: dotted;
+}
+.review-editor-submit {
+    margin-top: 20px;
+    position: absolute;
+    right: 200px;
+    font-size: 24px;
+    background: orange;
+    border: 0;
+    border-radius: 5px;
+}
+.review-editor-error {
+
+    font-size: 13px;
+    color:red;
+}
+.review-extra {
+    margin-top: 30px;
+    width: 600px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 13px;
+}
+
+.review-extra input,select {
+    display: inline-block;
+    width: 200px;
+    border: 1px solid rgb(209, 214, 223);
+    padding: 0px 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease 0s;
+    font-family: Roboto, Arial, sans-serif;
+    color: rgb(46, 50, 56);
+    font-weight: 400;
+    font-size: 14px;
+
+}
+.review-extra select {
+    width: 50px;
+}
+.review-extra label {
+    display: inline-block;
+    padding-right: 30px;
+
+}
+
+.review-extra div {
+    margin-top: 10px;
+}
+

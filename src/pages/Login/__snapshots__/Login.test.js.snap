@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login page tests renders correctly 1`] = `
+<div>
+  <div
+    class="login-wrapper"
+  >
+    <div
+      class="login-img"
+    >
+      <picture>
+        <source
+          media="(max-width:800px)"
+          srcset="movie-200.jpg"
+        />
+        <source
+          media="(max-width:1100px)"
+          srcset="movie-400.jpg"
+        />
+        <source
+          media="(max-width:1500px)"
+          srcset="movie-500.jpg"
+        />
+        <img
+          alt="This login movie img"
+          src="movie-500.jpg"
+        />
+      </picture>
+    </div>
+    <div
+      class="login-box"
+    >
+      <div
+        class="account-body"
+      >
+        <div
+          class="account-title"
+        >
+          Login
+        </div>
+        <div
+          class="account-form-wrapper"
+        >
+          <div
+            class="account-form"
+          >
+            <div
+              class="account-form-raw"
+            >
+              <input
+                class="account-form-input"
+                id="username"
+                name="username"
+                placeholder="username"
+                type="text"
+                value=""
+              />
+            </div>
+            <div
+              class="account-form-raw"
+            >
+              <input
+                class="account-form-input"
+                id="password"
+                name="password"
+                placeholder="password"
+                type="text"
+                value=""
+              />
+            </div>
+            <div
+              class="account-form-error"
+            >
+              <span
+                class="error-message"
+              />
+            </div>
+            <div
+              class="account-form-field-submit"
+            >
+              <div
+                class="btn-account null"
+              >
+                <span>
+                  Login
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

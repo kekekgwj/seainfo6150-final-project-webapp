@@ -1,0 +1,88 @@
+.movie-wrapper {
+    color: #111;
+    width: 800px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.movie-content {
+    min-height: 400px;
+}
+
+.movie-content h1 {
+
+}
+.movie-info {
+    display: flex;
+}
+.movie-poster-wrapper {
+    max-width: 200px;
+    overflow: hidden;
+}
+.movie-poster {
+    width: 200px;
+}
+.movie-detail {
+    max-width: 400px;
+    overflow: hidden;
+    margin-left: 20px;
+}
+.label {
+    font-size: 15px;
+    line-height: 150%;
+    color: #666666
+}
+.text {
+    color: #111;
+    font-size: 15px;
+    margin-left: 5px;
+}
+.movie-rating-container {
+    float: left;
+    width: 155px;
+    margin: 2px 0 0 100px;
+    padding: 0 0 0 15px;
+    border-left: 1px solid #eaeaea;
+    color: #999;
+}
+
+.rating-text {
+    display: inline-block;
+    color: black;
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.rating-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.movie-brief-title {
+    color: orange;
+}
+
+.movie-brief-text {
+    word-break: normal;
+    word-wrap: break-word;
+    font-size: 13px;
+    color: #111;
+}
+
+.movie-review-title {
+    color: orange
+}
+
+.movie-add-review {
+    display: flex;
+    align-items: center;
+    font-size:  13px;
+    background: orange;
+    width: 180px;
+
+}
+.movie-add-review-text {
+    position: relative;
+    left: 10px;
+
+}

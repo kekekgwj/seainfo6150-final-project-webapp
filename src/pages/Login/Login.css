@@ -1,0 +1,115 @@
+.login-box {
+    border: 1px solid #d8d8d8;
+    width: 340px;
+    position: relative;
+    margin-top: -30px;
+    vertical-align: top;
+}
+.login-wrapper {
+    width: 1000px;
+    margin: 20px auto 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-img {
+    overflow: visible;
+    margin-top: 50px;
+}
+
+
+.account-body {
+    min-height: 300px;
+    width: 340px;
+    padding: 50px 30px 100px;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    box-sizing: border-box
+}
+
+.account-title {
+    margin-bottom: 10px;
+    color: #333;
+    border-bottom: 1px solid #ececec;
+    font-size: 18px;
+    line-height: 2;
+    text-align: center;
+}
+
+.account-form-error {
+    min-height: 20px;
+    margin-bottom: 5px;
+    background: none;
+    font-size: 13px;
+    color: red;
+}
+
+.account-form-raw {
+    margin-bottom: 10px;
+}
+
+.account-form-input {
+    width: 280px;
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: 1px solid #e4e6e5;
+}
+.account-form-field-submit {
+    width: 280px;
+}
+.btn-account {
+    line-height: 36px;
+    text-align: center;
+    outline: 0;
+    cursor: default;
+    background-color: #b92b27;
+    border-radius: 3px;
+    color: #fff;
+    height: 36px;
+}
+
+.loading{
+    width: 150px;
+    height: 15px;
+    margin: 0 auto;
+    margin-top:100px;
+}
+.loading span{
+    display: inline-block;
+    width: 15px;
+    height: 100%;
+    margin-right: 5px;
+    border-radius: 50%;
+    background: #ddd;
+    animation: load 1.04s ease infinite;
+}
+.loading span:last-child{
+    margin-right: 0px; 
+}
+@keyframes load{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.loading span:nth-child(1){
+    animation-delay:0.13s;
+}
+.loading span:nth-child(2){
+    animation-delay:0.26s;
+}
+.loading span:nth-child(3){
+    animation-delay:0.39s;
+}
+.loading span:nth-child(4){
+    animation-delay:0.52s;
+}
+.loading span:nth-child(5){
+    animation-delay:0.65s;
+}

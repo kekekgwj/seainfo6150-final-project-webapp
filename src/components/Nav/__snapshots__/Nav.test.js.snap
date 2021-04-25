@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`nav tests renders correctly 1`] = `
+<div>
+  <div
+    class="global-nav"
+  >
+    <div
+      class="global-nav-items"
+    >
+      <ul>
+        <li>
+          <a
+            href="/movie_list"
+          >
+            Movies
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="top-nav-user"
+    >
+      <div>
+        <div>
+          <span
+            class="nav-user-icon"
+          >
+            <img
+              alt="user-icon"
+              src="login-user.png"
+            />
+          </span>
+          <span>
+            test user
+          </span>
+        </div>
+        <div
+          class="nav-log-out"
+        >
+          <span>
+            Log out
+          </span>
+          <span
+            class="nav-user-icon"
+          >
+            <img
+              alt="log out"
+              src="log-out.png"
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

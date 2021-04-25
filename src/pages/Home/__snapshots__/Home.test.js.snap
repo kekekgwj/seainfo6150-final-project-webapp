@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home page tests renders correctly 1`] = `
+<div>
+  <div
+    class="home-wrapper"
+  >
+    <div
+      class="home-review-list-wrapper"
+    >
+      <h2
+        class="home-review-list-title"
+      >
+        My Reviews · · · · · ·
+      </h2>
+      <div
+        class="home-error"
+      >
+        <span
+          class="error-message"
+        />
+      </div>
+      <div
+        class="review-list-container"
+      />
+    </div>
+  </div>
+</div>
+`;

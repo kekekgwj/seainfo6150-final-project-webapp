@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rating  tests renders correctly 1`] = `
+<div>
+  <div
+    class="rate-container"
+  >
+    <div
+      class="rate-content"
+    >
+      <input
+        name="rate"
+        type="radio"
+        value="1"
+      />
+      <input
+        name="rate"
+        type="radio"
+        value="2"
+      />
+      <input
+        name="rate"
+        type="radio"
+        value="3"
+      />
+      <input
+        name="rate"
+        type="radio"
+        value="4"
+      />
+      <input
+        name="rate"
+        type="radio"
+        value="5"
+      />
+    </div>
+  </div>
+</div>
+`;

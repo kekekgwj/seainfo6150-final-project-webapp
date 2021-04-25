@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Movie page tests renders correctly 1`] = `
+<div>
+  <div
+    class="movie-wrapper"
+  >
+    <div
+      class="movie-content"
+    />
+  </div>
+</div>
+`;

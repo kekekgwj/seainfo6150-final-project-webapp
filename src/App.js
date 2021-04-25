@@ -1,69 +1,62 @@
-import React from "react";
-import { Switch, Route, Link } from "react-router-dom";
-
-import Home from "./Home/Home.jsx";
-import Foo from "./Foo/Foo.jsx";
-import Bar from "./Bar/Bar.jsx";
-import Baz from "./Baz/Baz.jsx";
-import Error from "./Error/Error.jsx";
-
-// here is some external content. look at the /baz route below
-// to see how this content is passed down to the components via props
-const externalContent = {
-  id: "article-1",
-  title: "An Article",
-  author: "April Bingham",
-  text: "Some text in the article",
-};
+import React, { useEffect, useState } from "react";
+import { Switch, Route } from "react-router-dom";
+import Home from "./pages/Home/Home.jsx";
+import Login from "./pages/Login/Login.jsx";
+import Nav from "./components/Nav/Nav";
+import Rating from "./components/Rating/Rating";
+import MovieList from "./pages/MovieList/MovieList";
+import Movie from "./pages/Movie/Movie";
+import Error from "./pages/Error/Error"
+import ReviewEditor from "./pages/ReviewEditor/ReviewEditor";
+import { endSession, checkSession } from "./services";
 
 function App() {
-  return (
-    <>
-      <header>
-        <nav>
-          <ul>
-            {/* these links should show you how to connect up a link to a specific route */}
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/foo">Foo</Link>
-            </li>
-            <li>
-              <Link to="/bar/hats/sombrero">Bar</Link>
-            </li>
-            <li>
-              <Link to="/baz">Baz</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
+  const [username, setUsername] = useState();
+  const onLogin = (username) => {
+    if (username) {
+      setUsername(username);
+    }
+  }
+  const onLogOut = () => {
+    endSession()
+    .then( () => {
+      setUsername(null);
+    })
+    .catch((err) => {
+    })
+  }
+  useEffect(() =>{
+    checkSession()
+    .then(({username}) => {
+      setUsername(username);
+    })
+    .catch(err => {
+
+    })
+  },[])
+  return  (
+    <div className="App">
+      <Nav username={username} onLogOut={onLogOut}></Nav>
       <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/foo" exact component={Foo} />
-        {/* passing parameters via a route path */}
         <Route
-          path="/bar/:categoryId/:productId"
-          exact
-          render={({ match }) => (
-            // getting the parameters from the url and passing
-            // down to the component as props
-            <Bar
-              categoryId={match.params.categoryId}
-              productId={match.params.productId}
-            />
-          )}
-        />
+          path="/home" exact component={Home} />
         <Route
-          path="/baz"
-          exact
-          render={() => <Baz content={externalContent} />}
-        />
-        <Route component={Error} />
+          path="/login"  >
+          <Login onLogin={onLogin}/>
+        </Route>
+        <Route
+          path="/rating" exact component={Rating} />
+        <Route
+          path="/movie_list" exact component={MovieList}/>
+        <Route
+          path="/movie/:id" exact component={Movie}/>
+        <Route 
+          path="/new_review/:id" exact component={ReviewEditor}/>
+        <Route
+          path="/" exact component={MovieList}/>
+        <Route component={Error}></Route>
       </Switch>
-    </>
+    </div>
   );
 }
 

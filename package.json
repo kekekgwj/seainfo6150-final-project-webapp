@@ -3,13 +3,19 @@
   "homepage": "https://aprilbingham-neu.github.io/seainfo6150-final-project-webapp",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://validator.w3.org/",
+  "proxy": "http://localhost:5000",
   "dependencies": {
-    "lodash": "4.17.20",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-router-dom": "5.2.0",
-    "react-scripts": "3.0.0"
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.0.1",
+    "uuid": "^8.3.1",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "react-router-dom": "5.2.0"
   },
   "devDependencies": {
     "@testing-library/react": "10.4.5",
@@ -17,6 +23,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "backend":"cd ./backend && node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
